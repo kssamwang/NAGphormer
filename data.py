@@ -103,9 +103,9 @@ def get_train_val_test_split(random_state,
     return train_indices, val_indices, test_indices
 
 def get_dataset(dataset, pe_dim, split_seed=0):
-    file_dir = 'dataset'
+    file_dir = 'dataset/'
     if dataset in {"pubmed", "corafull", "computer", "photo", "cs", "physics","cora", "citeseer"}:
-        file_path = file_dir + dataset+".pt"
+        file_path = file_dir + dataset +".pt"
 
         data_list = torch.load(file_path)
 
