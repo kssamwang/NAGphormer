@@ -6,14 +6,16 @@ This is the code for our ICLR 2023 paper
 
 ## Requirements
 Python == 3.8
+
 Pytorch == 1.11
+
 dgl == 0.9
+
 CUDA == 11.3
 
 ```sh
 conda create -n gf1 python=3.8 -y
 conda activate gf1
-conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113 2014  pip install packaging==20.0 pyparsing==2.3.1 python-dateutil==2.7
 pip install matplotlib==3.7.3
 wget https://conda.anaconda.org/dglteam/linux-64/dgl-cuda11.3-0.9.0-py38_0.tar.bz2
